@@ -10,14 +10,17 @@ generic template leaves out. Cite what you use in the brief (section 2).
 
 ## Index
 
-| File                       | Relevant when                                                              |
-|----------------------------|----------------------------------------------------------------------------|
-| `storytold-agent-files.md` | Writing agent instruction files; large Rust workspaces; desktop/creative   |
-|                            | apps; clean-room clones of an existing product; apps agents must drive     |
-|                            | (CLI, control channel, MCP); many agents on one repo for long runs         |
-| `bun-zig-to-rust.md`       | Rewriting or porting a large codebase to another language; very large      |
-|                            | mechanical changes; many parallel agents for days; reviewing huge volumes  |
-|                            | of agent-written code; choosing a language for memory safety               |
+| File                         | Relevant when                                                              |
+|------------------------------|----------------------------------------------------------------------------|
+| `storytold-agent-files.md`   | Writing agent instruction files; large Rust workspaces; desktop/creative   |
+|                              | apps; clean-room clones of an existing product; apps agents must drive     |
+|                              | (CLI, control channel, MCP); many agents on one repo for long runs         |
+| `bun-zig-to-rust.md`         | Rewriting or porting a large codebase to another language; very large      |
+|                              | mechanical changes; many parallel agents for days; reviewing huge volumes  |
+|                              | of agent-written code; choosing a language for memory safety               |
+| `simplex-chat-ai-process.md` | Writing agent instruction files; large multi-platform codebases where      |
+|                              | agents lose context between sessions; security-sensitive code; keeping     |
+|                              | in-repo plans and docs that agents must keep in sync with code             |
 
 ## Adding research
 
