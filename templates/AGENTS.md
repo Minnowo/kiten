@@ -157,6 +157,20 @@ done:
 - The reviewer does not edit code. The author fixes each finding or explains
   why it does not apply.
 
+## Subagents
+
+- A subagent never spawns another subagent. This applies to every kind:
+  coding agents, reviewers, researchers, fetchers.
+- A coding subagent does not start its own reviewer; it finishes, reports,
+  and the top-level agent decides on and starts the review.
+- A reviewer does not start a second reviewer or a "verifier" of its own
+  findings; it reports, and the top-level agent decides if more review is
+  needed.
+- If a subagent thinks more agents are needed, it says so in its report
+  instead of spawning them.
+- When the top-level agent spawns a subagent, it includes this rule in the
+  subagent's instructions.
+
 ## Ask a human first
 
 Do not decide these on your own:
