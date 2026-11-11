@@ -30,6 +30,7 @@ reader can follow top to bottom.
 - Handle errors explicitly at the point they occur. Do not swallow them, and do
   not use panicking shortcuts (`unwrap`, `!`, bare `except`, etc.) outside tests
   unless failure is provably impossible.
+- If using Rust do not implicit return from a function, always use the `return` keyword.
 - Treat every number that comes from input (files, network, users, agents) as
   hostile: check bounds before indexing, guard divisions, cap allocations,
   bound recursion.
